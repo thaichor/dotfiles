@@ -3,12 +3,17 @@
   email = thaichor@gmail.com
 
 [alias]
-  l = log --pretty=colored
+  l = log --pretty=colored -n10
+  ll = log --pretty=colored
   br = branch
   co = checkout
   sl = stash list
   ss = stash save
   sp = stash pop
+  bd = !sh -c 'git branch -D $1 && git push origin :$1' -
+  ri = !git fetch origin && git rebase -i origin/master
+  mm = !git checkout master && git merge @{-1}
+  ready = !git fetch origin && git rebase --interactive origin/master && git rebase origin/master --ignore-date && git push -f && git mm && git push
 
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
