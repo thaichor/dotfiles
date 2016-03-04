@@ -1,0 +1,14 @@
+[user]
+  name = Thaichor Seng
+  email = thaichor@gmail.com
+
+[alias]
+  l = log --pretty=colored
+  br = branch
+  co = checkout
+  sl = stash list
+  ss = stash save
+  sp = stash pop
+
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset

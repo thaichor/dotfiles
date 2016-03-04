@@ -1,0 +1,33 @@
+# Bundle
+alias bs="bundle show"
+
+# Rails
+alias rs="bundle exec rails s"
+alias rc="bundle exec rails c"
+alias rr="bundle exec rake routes"
+alias rrg="rr | grep"
+alias rsl="bundle exec rake yoolk_sample:load"
+alias rdb="rake db:migrate"
+alias rdbtest="rake db:migrate RAILS_ENV=test"
+alias sk="bundle exec sidekiq"
+
+# Git
+alias git="hub"
+alias st="git st"
+alias add="git add"
+alias diff="git diff"
+
+# Yoolk
+alias ye="cd /var/www/yoolk_engines"
+alias yo="cd /var/www/yoolk_office"
+alias yom="cd /var/www/yoolk_office_mobile"
+alias yoa="cd /var/www/yoolk_office_api"
+alias yp="cd /var/www/yoolk_portal"
+alias yra="cd /var/www/yoolk_rest_api"
+alias yg="cd /var/www/yoolk-website"
+alias ygm="cd /var/www/groow_mobile"
+alias yiw="cd /var/www/yoolk_instant_website"
+alias yw="cd /var/www/yoolk_worker"
+
+# Yoolk Office
+alias rt="bundle exec rake translation:import_google_sheets"

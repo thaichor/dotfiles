@@ -1,0 +1,14 @@
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
+
+source ~/config/zsh-git-prompt/zshrc.sh
+PROMPT='%B%{$fg_bold[blue]%}$USER %{$fg_bold[green]%}%~ %{$fg_bold[red]%}$(~/.rvm/bin/rvm-prompt i v) %b$(git_super_status) %# '
+
+# %{$fg_bold[blue]%} blue_color with bold
+# %{$fg[blue]%} blue_color
+# $USER current_user
+# %~ full_path
+# $(~/.rvm/bin/rvm-prompt i v) ruby version https://rvm.io/workflow/prompt
+# %m pc name
